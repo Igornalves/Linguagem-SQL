@@ -1,0 +1,96 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-18db2726195-5b347a06bfcb713": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "aprendendo_sql",
+			"save-password": true,
+			"virtual-model-id": "postgres-jdbc-18d87054cdc-7bae918eeef46c7d",
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "aprendendo_sql",
+				"url": "jdbc:postgresql://localhost:5432/aprendendo_sql",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-16",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"sqlite_jdbc-18db2726c00-1d59345480c3c344": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "DBeaver Sample Database (SQLite)",
+			"save-password": true,
+			"show-system-objects": true,
+			"virtual-model-id": "dbeaver-sample-database-sqlite-1",
+			"configuration": {
+				"database": "C:\\Users\\igorn\\AppData\\Roaming\\DBeaverData\\workspace6\\.metadata\\sample-database-sqlite-1\\Chinook.db",
+				"url": "jdbc:sqlite:C:\\Users\\igorn\\AppData\\Roaming\\DBeaverData\\workspace6\\.metadata\\sample-database-sqlite-1\\Chinook.db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18db272780a-10b10ed6b08d3084": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "postgres",
+			"save-password": true,
+			"virtual-model-id": "postgres-jdbc-18db268a7e0-73021660bf985295",
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://localhost:5432/postgres",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-16",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18db272832b-7a67535f92bc2202": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "sistema_escola-poo",
+			"save-password": true,
+			"virtual-model-id": "postgres-jdbc-18db26ae474-7e46cd133f2b7dc9",
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "sistema_escola-poo",
+				"url": "jdbc:postgresql://localhost:5432/sistema_escola-poo",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-16",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false"
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Desenvolvimento",
+			"color": "255,255,255",
+			"description": "Banco de dados de desenvolvimento",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 3600
+		}
+	}
+}

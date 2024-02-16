@@ -15,8 +15,18 @@
             "server": "localhost",
             "port": 5432,
             "driver": "PostgreSQL",
+            "username": "igorn",
+            "password": "08901",
+            "database": "sistema_de_vendas",
+            "name": "PostgreSQL 16"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
             "name": "PostgreSQL 16",
-            "database": "aprendendo_sql",
+            "database": "sistema_escola-poo",
             "username": "igorn",
             "password": "08901"
         }
