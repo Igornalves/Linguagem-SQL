@@ -1,33 +1,12 @@
 {
 	"folders": {},
 	"connections": {
-		"postgres-jdbc-18db2726195-5b347a06bfcb713": {
-			"provider": "postgresql",
-			"driver": "postgres-jdbc",
-			"name": "aprendendo_sql",
-			"save-password": true,
-			"virtual-model-id": "postgres-jdbc-18d87054cdc-7bae918eeef46c7d",
-			"configuration": {
-				"host": "localhost",
-				"port": "5432",
-				"database": "aprendendo_sql",
-				"url": "jdbc:postgresql://localhost:5432/aprendendo_sql",
-				"configurationType": "MANUAL",
-				"home": "postgresql-x64-16",
-				"type": "dev",
-				"provider-properties": {
-					"@dbeaver-show-non-default-db@": "false"
-				},
-				"auth-model": "native"
-			}
-		},
 		"sqlite_jdbc-18db2726c00-1d59345480c3c344": {
 			"provider": "sqlite",
 			"driver": "sqlite_jdbc",
 			"name": "DBeaver Sample Database (SQLite)",
 			"save-password": true,
 			"show-system-objects": true,
-			"virtual-model-id": "dbeaver-sample-database-sqlite-1",
 			"configuration": {
 				"database": "C:\\Users\\igorn\\AppData\\Roaming\\DBeaverData\\workspace6\\.metadata\\sample-database-sqlite-1\\Chinook.db",
 				"url": "jdbc:sqlite:C:\\Users\\igorn\\AppData\\Roaming\\DBeaverData\\workspace6\\.metadata\\sample-database-sqlite-1\\Chinook.db",
@@ -41,7 +20,6 @@
 			"driver": "postgres-jdbc",
 			"name": "postgres",
 			"save-password": true,
-			"virtual-model-id": "postgres-jdbc-18db268a7e0-73021660bf985295",
 			"configuration": {
 				"host": "localhost",
 				"port": "5432",
@@ -61,12 +39,30 @@
 			"driver": "postgres-jdbc",
 			"name": "sistema_escola-poo",
 			"save-password": true,
-			"virtual-model-id": "postgres-jdbc-18db26ae474-7e46cd133f2b7dc9",
 			"configuration": {
 				"host": "localhost",
 				"port": "5432",
 				"database": "sistema_escola-poo",
 				"url": "jdbc:postgresql://localhost:5432/sistema_escola-poo",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-16",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18db2f8d5b1-3691126603d475e5": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "sistema_de_vendas",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "sistema_de_vendas",
+				"url": "jdbc:postgresql://localhost:5432/sistema_de_vendas",
 				"configurationType": "MANUAL",
 				"home": "postgresql-x64-16",
 				"type": "dev",
