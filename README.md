@@ -14,6 +14,16 @@ bom eu escolhe dois bancos de dados para fazer ess treinamento e aprendizado que
 
 A escolha de usar ele foi pq, eles sao os mais usando quando se fala de banco de dados relacional que e bastante usando no mercado.
 
+## Ferramenta para manipulacao de banco de dados 
+
+eu escolhe a ferramenta chamada dbeaver para fazer a conecao de Script SQL com o banco de dados para fazer o codigo de forma completa.
+
+<div align="center" style="display: inline_block">
+
+   <img align="center" alt="dbeaver" width="120" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dbeaver/dbeaver-original.svg"> 
+</div>
+
+
 ## Links Úteis
 
 Aqui abixo estão os links de outros repositorios que tenho em meu GitHub que possa se interressa:
