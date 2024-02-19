@@ -12,6 +12,7 @@
 				"url": "jdbc:sqlite:C:\\Users\\igorn\\AppData\\Roaming\\DBeaverData\\workspace6\\.metadata\\sample-database-sqlite-1\\Chinook.db",
 				"configurationType": "MANUAL",
 				"type": "dev",
+				"closeIdleConnection": false,
 				"auth-model": "native"
 			}
 		},
@@ -28,6 +29,7 @@
 				"configurationType": "MANUAL",
 				"home": "postgresql-x64-16",
 				"type": "dev",
+				"closeIdleConnection": false,
 				"provider-properties": {
 					"@dbeaver-show-non-default-db@": "false"
 				},
@@ -47,6 +49,7 @@
 				"configurationType": "MANUAL",
 				"home": "postgresql-x64-16",
 				"type": "dev",
+				"closeIdleConnection": false,
 				"provider-properties": {
 					"@dbeaver-show-non-default-db@": "false"
 				},
@@ -66,10 +69,15 @@
 				"configurationType": "MANUAL",
 				"home": "postgresql-x64-16",
 				"type": "dev",
+				"closeIdleConnection": false,
 				"provider-properties": {
 					"@dbeaver-show-non-default-db@": "false"
 				},
 				"auth-model": "native"
+			},
+			"custom-properties": {
+				"resultset.confirm.beforeSave": "false",
+				"resultset.datetime.editor": "false"
 			}
 		}
 	},

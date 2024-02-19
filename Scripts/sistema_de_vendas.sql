@@ -51,133 +51,52 @@ CREATE TABLE VENDAS (
 	QUANTIDADE_VENDIDA INTEGER
 );
 
-INSERT INTO clientes (
-	nome_cliente,data_de_nascimento,endereco,cidade,email,telefone
-) VALUES (
-	'fernando',
-	'10/04/2000',
-	'rua 10, quadra j, casa 15, conjunto vale quem tem',
-	'teresina',
-	'fernando05santos@gmail.com',
-	'(86)99425-2345'
+CREATE TABLE frutas (
+	id_fruta Serial PRIMARY KEY,
+	nome_fruta varchar(30)
 );
 
-INSERT INTO clientes (
-	nome_cliente,data_de_nascimento,endereco,cidade,email,telefone
-) VALUES (
-	'Carla Veila',
-	'24/12/2004',
-	'rua 14, quadra r, casa 03, condominio bem viver',
-	'fortaleza',
-	'carlav90121@gmail.com',
-	'(86)99543-1225'
+CREATE TABLE produtos_alimenticios(
+	id_alimenticio Serial PRIMARY KEY,
+	nome_alimento varchar(30),
+	tipo varchar(30),
+	sabor varchar(30)
 );
 
-INSERT INTO clientes (
-	nome_cliente,data_de_nascimento,endereco,cidade,email,telefone
-) VALUES (
-	'Gustavo',
-	'15/06/1994',
-	'rua das flores, quadra f, casa 08, condominio relax',
-	'luiz correia',
-	'gustavodamasco977@gmail.com',
-	'(86)99412-8906'
-);
+INSERT INTO clientes (nome_cliente,data_de_nascimento,endereco,cidade,email,telefone) VALUES ('fernando','10/04/2000','rua 10, quadra j, casa 15, conjunto vale quem tem','teresina','fernando05santos@gmail.com','(86)99425-2345');
+INSERT INTO clientes (nome_cliente,data_de_nascimento,endereco,cidade,email,telefone) VALUES ('Carla Veila','24/12/2004','rua 14, quadra r, casa 03, condominio bem viver','fortaleza','carlav90121@gmail.com','(86)99543-1225');
+INSERT INTO clientes (nome_cliente,data_de_nascimento,endereco,cidade,email,telefone) VALUES ('Gustavo','15/06/1994','rua das flores, quadra f, casa 08, condominio relax','luiz correia','gustavodamasco977@gmail.com','(86)99412-8906');
+INSERT INTO clientes (nome_cliente,data_de_nascimento,endereco,cidade,email,telefone) VALUES ('Ivone','23/03/1991','rua babel, quadra r, casa 10, condominio jasmin','parnaiba','ivonealves735@gmail.com','(86)99418-7645');
 
-INSERT INTO clientes (
-	nome_cliente,data_de_nascimento,endereco,cidade,email,telefone
-) VALUES (
-	'Ivone',
-	'23/03/1991',
-	'rua babel, quadra r, casa 10, condominio jasmin',
-	'parnaiba',
-	'ivonealves735@gmail.com',
-	'(86)99418-7645'
-);
+INSERT INTO produtos (nome_produto,categoria,descricao,avaliacao_de_qualidade,preco)VALUES ('notebook Dell','Desktop','computador intel 3, com 8 gb de memoria ram, sdd de 288 gb de armazenamento, monitor oLed full hd',250,'2.500,00');
+INSERT INTO produtos (nome_produto,categoria,descricao,avaliacao_de_qualidade,preco)VALUES ('caixa de som JBL','Desktop','com Bluetooth, Xtreme-3 , cor preta',120,'1.216,00');
+INSERT INTO produtos (nome_produto,categoria,descricao,avaliacao_de_qualidade,preco)VALUES ('Gabinete gamer mancer','Pc Gamer de mesa','com RGB, cor preta, lateral de vidro, ',389,'119,99');
+INSERT INTO produtos (nome_produto,categoria,descricao,avaliacao_de_qualidade,preco)VALUES ('caixa de som JBL','Som portatil','com Bluetooth, Xtreme-3 , cor preta',120,'1.216,00');
+INSERT INTO produtos (nome_produto,categoria,descricao,avaliacao_de_qualidade,preco)VALUES ('microfone HyperX','microfone de mesa','de cabo,QuadCast , cor preta com vermelha,',120,'699,98');
 
-INSERT INTO produtos (
-	nome_produto,categoria,descricao,avaliacao_de_qualidade,preco
-)
-VALUES (
-	'notebook Dell',
-	'Desktop',
-	'computador intel 3, com 8 gb de memoria ram, sdd de 288 gb de armazenamento, monitor oLed full hd',
-	250,
-	'2.500,00'
-);
+INSERT INTO vendedor (nome_vendedor,data_de_nascimento,endereco,numero_de_registro,data_de_admissao)VALUES ('Daniel Siqueira','20/08/1998','rua da ypes, casa 23, apartamento 03, predio GDM',0002,'12/05/2015');
+INSERT INTO vendedor (nome_vendedor,data_de_nascimento,endereco,numero_de_registro,data_de_admissao)VALUES ('Vitor Emanuel','16/03/2004','rua 10, bairro vila maria, casa 08',0028,'21/04/2022');
+INSERT INTO vendedor (nome_vendedor,data_de_nascimento,endereco,numero_de_registro,data_de_admissao)VALUES ('gaby tamares','24/12/2003','rua da flores, bairro camelo, casa 23',0035,'12/08/2021');
+INSERT INTO vendedor (nome_vendedor,data_de_nascimento,endereco,numero_de_registro,data_de_admissao)VALUES ('yasmin gomes','15/03/2001','rua das pedras, bairro vila dos morros, casa 13',0029,'17/06/2020');
 
-INSERT INTO produtos (
-	nome_produto,categoria,descricao,avaliacao_de_qualidade,preco
-)
-VALUES (
-	'caixa de som JBL',
-	'Desktop',
-	'com Bluetooth, Xtreme-3 , cor preta',
-	120,
-	'1.216,00'
-);
+INSERT INTO frutas (nome_fruta) VALUES ('goiaba');
+INSERT INTO frutas (nome_fruta) VALUES ('banana');
+INSERT INTO frutas (nome_fruta) VALUES ('laranja');
+INSERT INTO frutas (nome_fruta) VALUES ('melancia');
+INSERT INTO frutas (nome_fruta) VALUES ('mamao');
+INSERT INTO frutas (nome_fruta) VALUES ('morango');
+INSERT INTO frutas (nome_fruta) VALUES ('pera');
+INSERT INTO frutas (nome_fruta) VALUES ('tangerina');
+INSERT INTO frutas (nome_fruta) VALUES ('abacaxi');
 
-
-INSERT INTO produtos (
-	nome_produto,categoria,descricao,avaliacao_de_qualidade,preco
-)
-VALUES (
-	'Gabinete gamer mancer',
-	'Pc Gamer de mesa',
-	'com RGB, cor preta, lateral de vidro, ',
-	389,
-	'119,99'
-);
-
-INSERT INTO produtos (
-	nome_produto,categoria,descricao,avaliacao_de_qualidade,preco
-)
-VALUES (
-	'caixa de som JBL',
-	'Som portatil',
-	'com Bluetooth, Xtreme-3 , cor preta',
-	120,
-	'1.216,00'
-);
-
-INSERT INTO produtos (
-	nome_produto,categoria,descricao,avaliacao_de_qualidade,preco
-)
-VALUES (
-	'microfone HyperX',
-	'microfone de mesa',
-	'de cabo,QuadCast , cor preta com vermelha,',
-	120,
-	'699,98'
-);
-
-INSERT INTO vendedor (
-	nome_vendedor,data_de_nascimento,endereco,numero_de_registro,data_de_admissao
-)
-VALUES (
-	'Daniel Siqueira','20/08/1998','rua da ypes, casa 23, apartamento 03, predio GDM',0002,'12/05/2015'
-);
-
-INSERT INTO vendedor (
-	nome_vendedor,data_de_nascimento,endereco,numero_de_registro,data_de_admissao
-)
-VALUES (
-	'Vitor Emanuel','16/03/2004','rua 10, bairro vila maria, casa 08',0028,'21/04/2022'
-);
-
-INSERT INTO vendedor (
-	nome_vendedor,data_de_nascimento,endereco,numero_de_registro,data_de_admissao
-)
-VALUES (
-	'gaby tamares','24/12/2003','rua da flores, bairro camelo, casa 23',0035,'12/08/2021'
-);
-
-INSERT INTO vendedor (
-	nome_vendedor,data_de_nascimento,endereco,numero_de_registro,data_de_admissao
-)
-VALUES (
-	'yasmin gomes','15/03/2001','rua das pedras, bairro vila dos morros, casa 13',0029,'17/06/2020'
-);
+INSERT INTO produtos_alimenticios (nome_alimento,tipo,sabor) VALUES('biscoito','Açúcar','doce');
+INSERT INTO produtos_alimenticios (nome_alimento,tipo,sabor) VALUES('chocolate','Açúcar','doce');
+INSERT INTO produtos_alimenticios (nome_alimento,tipo,sabor) VALUES('Arroz branco','fontes de carboidratos','massa');
+INSERT INTO produtos_alimenticios (nome_alimento,tipo,sabor) VALUES('Feijao carioca','grãos','legumes');
+INSERT INTO produtos_alimenticios (nome_alimento,tipo,sabor) VALUES('Amido de milho','grãos','milho');
+INSERT INTO produtos_alimenticios (nome_alimento,tipo,sabor) VALUES('oleo de soja','Óleos e gorduras','nao tem');
+INSERT INTO produtos_alimenticios (nome_alimento,tipo,sabor) VALUES('macarrao','fontes de carboidratos','massa');
+INSERT INTO produtos_alimenticios (nome_alimento,tipo,sabor) VALUES('cartela de ovo','proteínas de origem animal','ovo');
 
 INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)
 VALUES(1,3,3,1);
@@ -203,9 +122,11 @@ VALUES(2,3,1,1);
 INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)
 VALUES(4,4,5,2);
 
-select * from clientes;
-select * from produtos;
-select * from vendedor;
+SELECT * from clientes;
+SELECT * from produtos_eletronicos;
+SELECT * from produtos_alimenticios;
+SELECT * from vendedor;
+SELECT * from frutas;
 
 select * from vendas;
 
@@ -217,3 +138,12 @@ WHERE id_vendedor = 4;
 
 DELETE FROM produtos
 WHERE id_produtos = 2;
+
+ALTER TABLE produtos RENAME TO produtos_eletronicos;
+
+delete from produtos_alimenticios 
+where id_alimenticio = 16;
+
+
+
+
