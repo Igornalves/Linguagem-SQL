@@ -23,19 +23,6 @@ eu escolhe a ferramenta chamada dbeaver para fazer a conecao de Script SQL com o
    <img align="center" alt="dbeaver" width="120" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dbeaver/dbeaver-original.svg"> 
 </div>
 
-
-## Links Úteis
-
-Aqui abixo estão os links de outros repositorios que tenho em meu GitHub que possa se interressa:
-
-- [Linguagem-C](https://github.com/Igornalves/Linguagem-C)
-- [Projeto_Site-WhatsappBot](https://github.com/Igornalves/Projeto_Site-WhatsappBot)
-- [Linguagem-Python](https://github.com/Igornalves/Linguagem-Python)
-- [Biblioteca-React](https://github.com/Igornalves/Biblioteca-React)
-- [Projeto_WallPaper-WL](https://github.com/Igornalves/Projeto_WallPaper-WL)
-- [Calculadora-Digital_Front-End ](https://github.com/Igornalves/Calculadora-Digital_Front-End)
-- [Projeto_Sistema_Hospitalar-Poo](https://github.com/Igornalves/Projeto_Sistema_Hospitalar-Poo)
-
 ---
 
 **Obrigado por ler! Espero que eu tenha ajudado voçê em seus estudos ou sua pesquisa com meu repositório.**
