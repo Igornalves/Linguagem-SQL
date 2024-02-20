@@ -97,30 +97,16 @@ INSERT INTO produtos_alimenticios (nome_alimento,tipo,sabor) VALUES('Amido de mi
 INSERT INTO produtos_alimenticios (nome_alimento,tipo,sabor) VALUES('oleo de soja','Óleos e gorduras','nao tem');
 INSERT INTO produtos_alimenticios (nome_alimento,tipo,sabor) VALUES('macarrao','fontes de carboidratos','massa');
 INSERT INTO produtos_alimenticios (nome_alimento,tipo,sabor) VALUES('cartela de ovo','proteínas de origem animal','ovo');
+INSERT INTO produtos_alimenticios (nome_alimento,tipo,sabor) VALUES('poupa de goiaba','fruta','goiaba');
 
-INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)
-VALUES(1,3,3,1);
-
-INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)
-VALUES(1,3,4,2);
-
-INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)
-VALUES(3,2,1,1);
-
-INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)
-VALUES(3,1,1,1);
-
-INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)
-VALUES(3,2,3,1);
-
-INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)
-VALUES(2,2,3,1);
-
-INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)
-VALUES(2,3,1,1);
-
-INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)
-VALUES(4,4,5,2);
+INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)VALUES(1,3,3,1);
+INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)VALUES(1,3,4,2);
+INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)VALUES(3,2,1,1);
+INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)VALUES(3,1,1,1);
+INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)VALUES(3,2,3,1);
+INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)VALUES(2,2,3,1);
+INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)VALUES(2,3,1,1);
+INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)VALUES(4,4,5,2);
 
 SELECT * from clientes;
 SELECT * from produtos_eletronicos;
@@ -143,6 +129,47 @@ ALTER TABLE produtos RENAME TO produtos_eletronicos;
 
 delete from produtos_alimenticios 
 where id_alimenticio = 16;
+
+select nome_fruta from frutas;
+select nome_alimento from produtos_alimenticios;
+
+select D.nome_fruta, B.sabor 
+from frutas as D
+inner join produtos_alimenticios as B
+ON D.nome_fruta=B.sabor;
+
+select D.nome_fruta, B.nome_alimento  
+from frutas as D
+left join produtos_alimenticios as B
+ON D.nome_fruta=B.nome_alimento;
+
+select D.nome_fruta, B.nome_alimento  
+from frutas as D
+left join produtos_alimenticios as B
+ON D.nome_fruta=B.nome_alimento
+where b.nome_alimento is null;
+
+select D.nome_fruta, B.nome_alimento  
+from frutas as D
+right join produtos_alimenticios as B
+ON D.nome_fruta=B.nome_alimento;
+
+select D.nome_fruta, B.nome_alimento  
+from frutas as D
+right join produtos_alimenticios as B
+ON D.nome_fruta=B.nome_alimento
+where d.nome_fruta  is null;
+
+select D.nome_fruta, B.sabor  
+from frutas as D
+full join produtos_alimenticios as B
+ON D.nome_fruta=B.sabor;
+
+select D.nome_fruta, B.sabor  
+from frutas as D
+full join produtos_alimenticios as B
+ON D.nome_fruta=B.sabor
+where D.nome_fruta is not null or B.sabor is not null;
 
 
 
