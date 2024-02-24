@@ -61,7 +61,6 @@
 			"driver": "postgres-jdbc",
 			"name": "sistema_de_vendas",
 			"save-password": true,
-			"read-only": true,
 			"configuration": {
 				"host": "localhost",
 				"port": "5432",
@@ -74,6 +73,27 @@
 				"provider-properties": {
 					"@dbeaver-show-non-default-db@": "false"
 				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"resultset.confirm.beforeSave": "false",
+				"resultset.datetime.editor": "false"
+			}
+		},
+		"mysql8-18ddcd41b01-39db4d1278020127": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "vendas_mysql",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"database": "vendas_mysql",
+				"url": "jdbc:mysql://localhost:3306/vendas_mysql",
+				"configurationType": "MANUAL",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 8.0",
+				"type": "dev",
+				"closeIdleConnection": true,
 				"auth-model": "native"
 			}
 		}

@@ -79,6 +79,23 @@
 				"resultset.confirm.beforeSave": "false",
 				"resultset.datetime.editor": "false"
 			}
+		},
+		"mysql8-18ddd105241-64565a58aa7866de": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "estudos_mysql",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"database": "estudos_mysql",
+				"url": "jdbc:mysql://localhost:3306/estudos_mysql",
+				"configurationType": "MANUAL",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 8.0",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
 		}
 	},
 	"connection-types": {
