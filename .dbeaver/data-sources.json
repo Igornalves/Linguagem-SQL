@@ -77,7 +77,8 @@
 			},
 			"custom-properties": {
 				"resultset.confirm.beforeSave": "false",
-				"resultset.datetime.editor": "false"
+				"resultset.datetime.editor": "false",
+				"resultset.maxrows": "100"
 			}
 		},
 		"mysql8-18ddd105241-64565a58aa7866de": {

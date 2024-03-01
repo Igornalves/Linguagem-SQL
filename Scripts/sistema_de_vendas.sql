@@ -107,6 +107,7 @@ INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)VALUES(3,2,3,1);
 INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)VALUES(2,2,3,1);
 INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)VALUES(2,3,1,1);
 INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)VALUES(4,4,5,2);
+INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)VALUES(2,2,1,3);
 
 SELECT * from clientes;
 SELECT * from produtos_eletronicos;
@@ -125,7 +126,8 @@ WHERE id_vendedor = 4;
 DELETE FROM produtos
 WHERE id_produtos = 2;
 
-ALTER TABLE produtos RENAME TO produtos_eletronicos;
+ALTER TABLE produtos 
+RENAME TO produtos_eletronicos;
 
 delete from produtos_alimenticios 
 where id_alimenticio = 16;
@@ -172,5 +174,61 @@ ON D.nome_fruta=B.sabor
 where D.nome_fruta is not null or B.sabor is not null;
 
 
+ALTER TABLE produtos_eletronicos 
+RENAME COLUMN avaliacao_de_qualidade TO quantidade_estoque;
 
 
+create or replace function atualizacao_estoque()returns trigger 
+as 
+$$
+declare 
+	tirando_estoque integer;
+begin 
+	select quantidade_estoque 
+	into tirando_estoque
+	from produtos_eletronicos 
+	where id_produtos = new.produtos_eletronicos 
+	LIMIT 1;
+
+	if tirando_estoque < new.quantidade_vendida 
+	then raise exception 'Quantidade Indisponivel no estoque !!!';
+	else 
+	update produtos_eletronicos 
+	set quantidade_estoque = quantidade_estoque - new.quantidade_vendida 	
+	where id_produtos = new.produtos_eletronicos;
+	end if;
+
+	return new;
+end
+$$ language plpgsql;
+
+
+create trigger trig_atualizacao_estoque 
+before insert on vendas
+for each row 
+execute procedure atualizacao_estoque();
+
+
+SELECT * from produtos_eletronicos;
+SELECT * from vendas;
+
+drop table vendas;
+
+DROP FUNCTION IF EXISTS atualizacao_estoque();
+
+DROP TRIGGER IF EXISTS trig_atualizacao_estoque ON vendas;
+
+CREATE TABLE VENDAS (
+	ID_VENDAS SERIAL PRIMARY key not null,
+	VENDEDOR INTEGER REFERENCES VENDEDOR(ID_VENDEDOR),
+	CLIENTE INTEGER REFERENCES CLIENTES(ID_CLIENTES),
+	PRODUTO INTEGER REFERENCES produtos_eletronicos(ID_PRODUTOS),
+	QUANTIDADE_VENDIDA INTEGER
+);
+
+UPDATE produtos_eletronicos
+SET quantidade_estoque = 250
+where id_produtos = 3;
+
+INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)
+VALUES(2,4,4,10);

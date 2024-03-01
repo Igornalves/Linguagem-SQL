@@ -7,3 +7,10 @@ create table pessoas (
 	altura decimal(3,2),
 	nacionalidade varchar(20) default 'brasil'
 )default charset = UTF8;
+
+select * from pessoas;
+
+ALTER TABLE estudos_mysql.pessoas 
+MODIFY COLUMN id int auto_increment NOT NULL;
+
+
