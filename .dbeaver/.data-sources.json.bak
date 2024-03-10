@@ -77,19 +77,20 @@
 			},
 			"custom-properties": {
 				"resultset.confirm.beforeSave": "false",
-				"resultset.datetime.editor": "false"
+				"resultset.datetime.editor": "false",
+				"resultset.maxrows": "100"
 			}
 		},
-		"mysql8-18ddcd41b01-39db4d1278020127": {
+		"mysql8-18ddd105241-64565a58aa7866de": {
 			"provider": "mysql",
 			"driver": "mysql8",
-			"name": "vendas_mysql",
+			"name": "estudos_mysql",
 			"save-password": true,
 			"configuration": {
 				"host": "localhost",
 				"port": "3306",
-				"database": "vendas_mysql",
-				"url": "jdbc:mysql://localhost:3306/vendas_mysql",
+				"database": "estudos_mysql",
+				"url": "jdbc:mysql://localhost:3306/estudos_mysql",
 				"configurationType": "MANUAL",
 				"home": "C:\\Program Files\\MySQL\\MySQL Server 8.0",
 				"type": "dev",

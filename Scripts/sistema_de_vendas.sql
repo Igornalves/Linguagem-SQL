@@ -232,3 +232,5 @@ where id_produtos = 3;
 
 INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)
 VALUES(2,4,4,10);
+
+drop table transacoes;
