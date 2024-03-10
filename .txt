@@ -1,0 +1,7 @@
+server:   localhost,
+port:     number,
+driver:   PostgreSQL,
+name:     String Conection,
+database: String name,
+username: String user,
+password: number 
