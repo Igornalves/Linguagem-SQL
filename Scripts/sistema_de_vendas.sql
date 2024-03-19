@@ -233,4 +233,28 @@ where id_produtos = 3;
 INSERT INTO vendas (vendedor,cliente,produto,quantidade_vendida)
 VALUES(2,4,4,10);
 
+select * from knex_migrations_users kmu 
+
+select * from knex_migrations_users_lock kmul 
+
+drop table knex_migrations;
+
+drop table knex_migrations_lock;
+
+drop table knex_migrations_users;
+
+drop table knex_migrations_users_lock; 
+
 drop table transacoes;
+
+drop table trasacao;
+
+drop table transacoes_lock;
+
+drop table migracoes_transacoes;
+
+drop table migracoes_transacoes_lock;
+
+select * from transacoes;
+
+ALTER TABLE transacoes drop column title;
