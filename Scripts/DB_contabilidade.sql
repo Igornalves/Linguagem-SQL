@@ -127,6 +127,34 @@ Select * from empresa;
 select * from funcionario;
 select * from filial;
 
+-- implementando uma consulta SQL que seja capaz de lista o codigo e nome da empresa 
+
+select idemp,empresa from empresa;
+
+-- implementando uma consulta que seja capaz de listar data de nascimento e cpf e fazer um calculo subtraido tais dados e depois dividindo por 365 e vendo se o resultado e menor que de 18 anos 
+
+select datnas,cpf 
+from funcionario 
+where (admissao - datnas)/365 > 18 ; 
+
+-- implementando uma consulta que seja capaz de lista um ID da empresa, nomeda empresa, id filial enome da filial 
+
+SELECT e.idemp, e.empresa, f.idfil, f.filial
+FROM empresa e, filial f
+where e.idemp = f.filial;
+
+-- implemente uma consulta que traga uma consulta com o nome da empresa e da filial onde a filial cuja seja codo 
+
+select e.empresa, f.filial 
+from empresa e, filial f
+where f.filial = 'codo';
+
+-- 
+
+
+
+
+
 
 
 
