@@ -36,3 +36,4 @@ values(1,'Gerente administrativo'),(2,'Gerente Financeiro'),(3,'Gerente'),(4,'Ve
       
 select * from cargo;
 
+select * from empresa;
