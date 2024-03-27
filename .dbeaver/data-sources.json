@@ -96,6 +96,23 @@
 				"closeIdleConnection": true,
 				"auth-model": "native"
 			}
+		},
+		"mysql8-18e81b932b6-4272220ace6ad6f2": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "DB_contabilidade",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"database": "DB_contabilidade",
+				"url": "jdbc:mysql://localhost:3306/DB_contabilidade",
+				"configurationType": "MANUAL",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 8.0",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
 		}
 	},
 	"connection-types": {
@@ -111,7 +128,7 @@
 			"auto-close-transactions": true,
 			"close-transactions-period": 1800,
 			"auto-close-connections": true,
-			"close-connections-period": 3600
+			"close-connections-period": 14400
 		}
 	}
 }

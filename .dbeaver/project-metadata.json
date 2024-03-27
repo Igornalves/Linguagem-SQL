@@ -1,1 +1,1 @@
-{"resources":{"Scripts/sistema_de_vendas.sql":{"default-schema":"public","default-datasource":"postgres-jdbc-18db2f8d5b1-3691126603d475e5","default-catalog":"sistema_de_vendas"}}}
+{"resources":{"Scripts/DB_contabilidade.sql":{"default-datasource":"mysql8-18e81b932b6-4272220ace6ad6f2","default-catalog":"db_contabilidade"},"Scripts/sistema_de_vendas.sql":{"default-schema":"public","default-datasource":"postgres-jdbc-18db2f8d5b1-3691126603d475e5","default-catalog":"sistema_de_vendas"}}}
