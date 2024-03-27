@@ -78,7 +78,7 @@ values(1,'Gerente Administrativo'),
       (10, 'Cristiane Carvalho','F','13213333',4,1,2,'2012-05-05','1992-11-11',1800),
       (11, 'Maria Alice','F','13214444',4,1,4,'2023-01-02','2000-10-01',4800);
       
- select * from funcionario;
+select * from funcionario;
     
 /Passo V/
 create table eventos(
@@ -122,7 +122,10 @@ values (1,1,1,2,'2023-10-15',5,15,'+'),(2,1,10,2,'2023-10-22',7,22,'+'),(3,1,7,7
 (19,1,9,11,'2023-10-22',1,680,'+');    
 
 select * from contracheque;
-
+select * from eventos;  
+Select * from empresa;
+select * from funcionario;
+select * from filial;
 
 
 
