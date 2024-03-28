@@ -139,21 +139,56 @@ where (admissao - datnas)/365 > 18 ;
 
 -- implementando uma consulta que seja capaz de lista um ID da empresa, nomeda empresa, id filial enome da filial 
 
-SELECT e.idemp, e.empresa, f.idfil, f.filial
-FROM empresa e, filial f
-where e.idemp = f.filial;
+SELECT 
+	e.idemp, 
+	e.empresa, 
+	f.idfil, 
+	f.filial
+FROM 
+	empresa e, 
+	filial f
+where 
+	e.idemp = f.idemp;
 
 -- implemente uma consulta que traga uma consulta com o nome da empresa e da filial onde a filial cuja seja codo 
 
-select e.empresa, f.filial 
-from empresa e, filial f
-where f.filial = 'codo';
+select 
+	e.empresa, 
+ 	f.filial   
+from 
+	empresa as e, 
+	filial as f
+where 
+	f.filial = 'codo';
 
--- 
+-- consulte usando um codigo SQL que seja capaz de listar a matricula, nome do funcionario, cpf, cargo e salario
 
+select 
+	f.mat, 
+	f.colaborador, 
+	f.cpf, 
+	c.idcar, 
+	f.salario
+From 
+	funcionario as f, cargo as c 
+where 
+	f.idcar = c.idcar;
 
+-- consulte um codigo SQL que liste a data de nascimento, o cargo e o salario onde salario seja no intevalo de 1000 ou 3000 reais 
 
-
+select 
+	f.datnas, 
+	c.cargo,  
+	f.salario
+From 
+	funcionario as f, 
+	cargo as c 
+where 
+	c.idcar = f.idcar 
+and 
+	f.salario between 1000 and 3000
+order by 
+	f.salario desc;
 
 
 
