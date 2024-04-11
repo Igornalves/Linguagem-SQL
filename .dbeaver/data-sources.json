@@ -113,6 +113,27 @@
 				"closeIdleConnection": true,
 				"auth-model": "native"
 			}
+		},
+		"postgres-jdbc-18ea622f503-19e49ff101ce1bd1": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "DB_Stream-Netflix",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "DB_Stream-Netflix",
+				"url": "jdbc:postgresql://localhost:5432/DB_Stream-Netflix",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-16",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-chosen-role@": ""
+				},
+				"auth-model": "native"
+			}
 		}
 	},
 	"connection-types": {

@@ -200,6 +200,9 @@ begin
 
 	return new;
 end
+ LANGUAGE 'plpgsql';
+
+
 $$ language plpgsql;
 
 
@@ -207,6 +210,8 @@ create trigger trig_atualizacao_estoque
 before insert on vendas
 for each row 
 execute procedure atualizacao_estoque();
+
+
 
 SELECT * from produtos_eletronicos;
 SELECT * from vendas;

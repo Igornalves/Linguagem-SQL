@@ -190,6 +190,37 @@ and
 order by 
 	f.salario desc;
 
+-- elabore uma consulta SQL para listar 
+-- o nome da empresa
+-- o nome da afilial 
+-- o nome do funcionario 
+-- o nome do cargo que estao lotados na filial de teresina 
+
+select e.empresa, f.filial,fun.colaborador ,c.cargo
+from funcionario as fun
+inner join filial as f on f.idfil  = fun.idfil
+inner join empresa as e on e.idemp = fun.idemp 
+inner join cargo as c on c.idcar = fun.idcar 
+where f.filial = 'Teresina';
+  
+-- a coordenacao do setor comercial solicitou uma planilia excel que contem as seguintes informacoes 
+-- o valor total pago de salario para os cargos de gerencia 
+-- ordenado no valor decresente 
+
+select c.cargo ,sum(c2.quantidade*c2.valorEvento)as valorSalario from funcionario f 
+inner join cargo c on c.idcar = f.idcar 
+inner join contracheque c2 on c2.mat = f.mat 
+where c.cargo Like '%Gerente%'
+group by c.cargo
+order by valorSalario;
+
+select * from contracheque c 
+
+select * from funcionario f 
+
+select * from cargo c 
+
+
 
 
 
