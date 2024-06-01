@@ -134,6 +134,23 @@
 				},
 				"auth-model": "native"
 			}
+		},
+		"mysql8-18fd61862ca-6e294fa3464692bd": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "db_comercio",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"database": "db_comercio",
+				"url": "jdbc:mysql://localhost:3306/db_comercio",
+				"configurationType": "MANUAL",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 8.0",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
 		}
 	},
 	"connection-types": {
