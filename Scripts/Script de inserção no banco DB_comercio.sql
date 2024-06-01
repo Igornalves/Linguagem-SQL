@@ -8,7 +8,9 @@ values(1,'Hilson Silva','123156651'),
 (3,'Paula Sousa','5553156651'),
 (4,'Francisco Santos','456516516'),
 (5,'Raimundo Silva','456510055');
+
 select *  from cliente;
+
 commit;
 
  
@@ -23,7 +25,9 @@ values (1,'Teclado 102 teclas', 10, sysdate()),
       (8,'Notebook Asus 15.6 P Core i10', 11, sysdate()),
       (9,'Tablet 8 Polegada Sansung ', 11, sysdate()),
       (10,'Projetor Magic ', 10, sysdate());
+     
 select * from produto;
+
 select * from formapag;
 
 insert into formapag
@@ -31,11 +35,17 @@ values(1,'Dinheiro','DIN'),
       (2, 'PIX', 'PIX'),
       (3, 'Cartão de Crédito', 'CC'),
       (4, 'Boleto', 'BOL');
-   commit;   
- use db_vendas;  
+ 
+ commit;   
+  
+ use db_vendas; 
+
  select * from  pedido; 
+
  use db_vendas;
+
  commit;
+
  insert into pedido
  values(1, sysdate(), 1, 2, 3, 80.50, 2),
        (2, '2024-05-01',2,1,5,56,3),
@@ -49,7 +59,9 @@ values(1,'Dinheiro','DIN'),
        (10, sysdate(), 2, 8, 1, 3500, 3);
 
 select * from pedido;       
-select * from fluxo_caixa;       
+
+select * from fluxo_caixa;
+
 insert into fluxo_caixa
 values(1,sysdate(), 1,241.5, sysdate(), 'N'),
       (2,'2024-05-01',2, 280,'2024-05-01', 'S'),
