@@ -134,6 +134,86 @@
 				},
 				"auth-model": "native"
 			}
+		},
+		"mysql8-18fd61862ca-6e294fa3464692bd": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "db_comercio",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"database": "db_comercio",
+				"url": "jdbc:mysql://localhost:3306/db_comercio",
+				"configurationType": "MANUAL",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 8.0",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-190b3f9e530-4bec6b6e516194b1": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "gestao_vagas",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "gestao_vagas",
+				"url": "jdbc:postgresql://localhost:5432/gestao_vagas",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-16",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-chosen-role@": ""
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-190c7f8646b-4031766886ccac33": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "sistema_gerenciamento_de_tarefas",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "sistema_gerenciamento_de_tarefas",
+				"url": "jdbc:postgresql://localhost:5432/sistema_gerenciamento_de_tarefas",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-16",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-chosen-role@": ""
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-190e764888e-668b1a910369a8cb": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "gerenciador_aulas",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "gerenciador_aulas",
+				"url": "jdbc:postgresql://localhost:5432/gerenciador_aulas",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-16",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-chosen-role@": ""
+				},
+				"auth-model": "native"
+			}
 		}
 	},
 	"connection-types": {
