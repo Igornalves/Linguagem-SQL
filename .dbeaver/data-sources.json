@@ -228,6 +228,20 @@
 				"closeIdleConnection": true,
 				"auth-model": "native"
 			}
+		},
+		"sqlite_jdbc-191c4137a39-ad888dfcb3dcb47": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "TaskManager.db",
+			"save-password": true,
+			"configuration": {
+				"database": "C:\\Users\\igorn\\Documents\\PROGRAMAÇÃO VS.CODE\\Projetos Back-End APIs + CRUD\\Gerenciado_de_Tarfas-API-Node.js\\src\\databases\\TaskManager.db",
+				"url": "jdbc:sqlite:C:\\Users\\igorn\\Documents\\PROGRAMAÇÃO VS.CODE\\Projetos Back-End APIs + CRUD\\Gerenciado_de_Tarfas-API-Node.js\\src\\databases\\TaskManager.db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
 		}
 	},
 	"connection-types": {

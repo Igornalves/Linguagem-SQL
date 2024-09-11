@@ -214,6 +214,20 @@
 				},
 				"auth-model": "native"
 			}
+		},
+		"sqlite_jdbc-1915ba2ca7f-75af81ba53f237ce": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "database.db",
+			"save-password": true,
+			"configuration": {
+				"database": "C:\\Users\\igorn\\Documents\\PROGRAMAÇÃO VS.CODE\\Projetos Back-End APIs + CRUD\\ignitegym-api-main\\src\\database\\database.db",
+				"url": "jdbc:sqlite:C:\\Users\\igorn\\Documents\\PROGRAMAÇÃO VS.CODE\\Projetos Back-End APIs + CRUD\\ignitegym-api-main\\src\\database\\database.db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
 		}
 	},
 	"connection-types": {
